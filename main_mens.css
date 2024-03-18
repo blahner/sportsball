@@ -1,0 +1,154 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+.navbar {
+    background: var(--custom-orange);
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+:root {
+  --custom-green: green;
+  --custom-orange: #F49D1A;
+  --custom-black: black;
+  --custom-yellow: #FFE15D;
+  --custom-purple: #B01E68;
+  --custom-red: #DC3535;
+
+}
+.bracket_mens {
+    background-image: url('images/sportsball_mens.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);
+}
+button {
+    border:1px solid var(--custom-black);
+    background:var(--custom-yellow);
+    border-radius: 0.5rem;
+    color:black;
+    text-align: center;
+    height: 50px;
+}
+button:hover {
+	border:1px solid var(--custom-red);
+    background:white;
+    color:var(--custom-black);
+}
+.page-footer {
+    background-color: black;
+}
+.footer-copyright {
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+.quadLabel {
+    border: 1px solid var(--custom-black);
+    font-size: 10px;
+    background: var(--custom-red);
+    color: black;
+    text-align: center;
+    overflow-wrap:break-word;
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.gamebox64 {
+    border: 2px solid var(--custom-purple);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background: var(--custom-orange);
+    color: black;
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.gameboxBlank {
+    border: 2px solid var(--custom-purple);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    background: white;
+    color: black;
+    text-align: center;
+    overflow-wrap:break-word;
+    padding: 5px;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.roundlabel {
+    border: 2px solid var(--custom-red);
+    font-size: 1rem;
+    background: var(--custom-black);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    overflow-wrap:break-word;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.vlWest {
+    border-right: 2px solid var(--custom-purple);
+    height: 25px;
+}
+.vlEast {
+    border-left: 3px solid var(--custom-purple);
+    height: 25px;
+}
+.gameboxChampionship {
+    border: 1px solid var(--custom-black);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+    background: var(--custom-purple);
+    color: white;
+    text-align: center;
+    overflow-wrap:break-word;
+    padding: 3px;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bracketName {
+    border: 1px solid var(--custom-yellow);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    background: var(--custom-black);
+    color: white;
+    text-align: center;
+    overflow-wrap:break-word;
+    padding: 0px;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}

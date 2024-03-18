@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--adsense-->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4092966694287016"
+        crossorigin="anonymous"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1N7FHPRMYL"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1N7FHPRMYL');
+        </script>
+        <title>Sportsball Bracket Generator - Automatic Basketball Tournament Bracket Generation Tool</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Generate your unique Men's and Women's NCAA March Madness bracket (not affiliated) with one click of a button. Take a shot at a perfect bracket in the world's largest college basketball tournament.">
+        <link rel="icon" type="image/x-icon" href="images/sportsball_favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="main_womens.css">
+        <script type="text/javascript" 
+            src="adjectiveList.js">
+        </script>
+        <script type="text/javascript" 
+            src="nounList.js">
+        </script>
+	</head>
+	<body>
+        <nav class="navbar navbar-expand-md">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Mens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index_womens.html">Womens</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="bracket_womens container-fluid">
+            <div class="overlay"></div>
+            <div class="row">
+                <div class="col-1 roundlabel">Round 1</div>
+                <div class="col-1 roundlabel">Round 2</div>
+                <div class="col-1 roundlabel">Round 3</div>
+                <div class="col-1 roundlabel">Round 4</div>
+                <div class="col-1 roundlabel">Round 5</div>
+                <div class="col-2 roundlabel">Round 6</div>
+                <div class="col-1 roundlabel">Round 5</div>
+                <div class="col-1 roundlabel">Round 4</div>
+                <div class="col-1 roundlabel">Round 3</div>
+                <div class="col-1 roundlabel">Round 2</div>
+                <div class="col-1 roundlabel">Round 1</div>
+            </div>
+            <div class="row">
+                <div class="col-4"></div>
+                <button class="col-4 button" id="btn_womens">Generate Your Unique 2024 Sportsball Bracket</button>
+                <div class="col-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6" style="text-align: center"></div>
+                <div class="col-3"></div>
+            </div>
+            <!--Teams 1,16-->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterA">S. Carolina (1)</div>
+                <div class="col-10"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterA">Iowa (1)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterA">_____</div>
+                <div class="col-3"></div>
+                <div class="col-2 bracketName" id="BracketName">Your Bracket's Name</div>
+                <div class="col-3"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterA">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterB">SHU/PRES (16)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-8"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterB">HC/UTM (16)</div>
+            </div>
+            <div class="row"> <!--1/16 vs 8/9-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound16LetterA">_____</div>
+                <div class="col-6"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound16LetterA">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 8,9 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterC">North Carolina (8)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64"id="QuadNERound64LetterC">West Virginia (8)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterB">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterB">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterD">Michigan St. (9)</div>
+                <div class="col-1"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterD">Princeton (9)</div>
+            </div>
+            <div class="row"> <!--final eight game-->
+                <div class="col-3"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound8LetterA">_____</div>
+                <div class="col-4"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound8LetterA">_____</div>
+                <div class="col-3"></div>
+            </div>
+            <!--Teams 5,12 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterE">Oklahmoa (5)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterE">Colorado (5)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterC">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterC">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterF">FGCU (12)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterF">Drake (12)</div>
+            </div>
+            <div class="row"> <!--5/12 vs 4/13-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound16LetterB">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound16LetterB">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 4,13 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterG">Indiana (4)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterG">Kansas St. (4)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterD">_____</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterD">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterH">Fairfield (13)</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterH">Portland (13)</div>
+            </div>
+            <div class="row"> <!--Quad finals final four-->
+                <div class="col-4"></div>
+                    <div class="col-1 gameboxBlank" id="QuadNWRound4LetterA">_____</div>
+                <div class="col-2"></div>
+                    <div class="col-1 gameboxBlank" id="QuadNERound4LetterA">_____</div>
+                <div class="col-4"></div>
+            </div>
+            <!--HALF West Brackets-->
+            <!--Teams 6,11-->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterI">Nebraska (6)</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterI">Louisville (6)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterE">_____</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterE">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterJ">Texas A&M (11)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterJ">Middle Tenn. (11)</div>
+            </div>
+            <div class="row"> <!--6/11 vs 3/14-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound16LetterC">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound16LetterC">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 3,14 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterK">Oregon St. (3)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterK">LSU (3)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterF">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterF">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterL">Eastern Wash. (14)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterL">Rice (14)</div>
+            </div>
+            <div class="row"> <!--final eight game-->
+                <div class="col-3"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound8LetterB">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound8LetterB">_____</div>
+                <div class="col-3"></div>
+            </div>
+            <!--Teams 7,10 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterM">Ole Miss (7)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterM">Creighton (7)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterG">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterG">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterN">Marquette (10)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterN">UNLV (10)</div>
+            </div>
+            <div class="row"> <!--7/10 vs 2/15-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound16LetterD">_____</div>
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="SemiFinalsWest">_____</div>
+                <div class="col-1 gameboxBlank" id="SemiFinalsEast">_____</div>
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound16LetterD">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 2, 15 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterO">Notre Dame (2)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterO">UCLA (2)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadNWRound32LetterH">_____</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadNERound32LetterH">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadNWRound64LetterP">Kent St. (15)</div>
+                <div class="col-4 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1"></div>
+                <div class="col-4 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadNERound64LetterP">California Baptist (15)</div>
+            </div>
+
+            <div class="row">
+                <div class="col-5 vlWest"></div>
+                <div class="col-2">
+                    <div class="gameboxChampionship" id="Finals">Sportsball Champion</div>
+                </div>
+                <div class="col-5 vlEast"></div>
+            </div><!--Half of Bracket-->
+        
+            <!--Teams 1,16-->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterA">Texas (1)</div>
+                <div class="col-4 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-4 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterA">Southern California (1)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterA">_____</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-2">
+                    <div class="gameboxBlank" id="FinalScore">Final Score Tiebreaker</div>
+                </div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterA">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterB">Drexel (16)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterB">A&M-Corpus Christi (16)</div>
+            </div>
+            <div class="row"> <!--1/16 vs 8/9-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound16LetterA">_____</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound16LetterA">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 8,9 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterC">Alabama (8)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64"id="QuadSERound64LetterC">Kansas (8)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterB">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterB">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterD">Florida St. (9)</div>
+                <div class="col-1"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterD">Michigan (9)</div>
+            </div>
+            <div class="row"> <!--final eight game-->
+                <div class="col-3"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound8LetterA">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound8LetterA">_____</div>
+                <div class="col-3"></div>
+            </div>
+            <!--Teams 5,12 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterE">Utah (5)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterE">Baylor (5)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterC">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterC">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterF">South Dakota St. (12)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterF">VANDY/COLU (12)</div>
+            </div>
+            <div class="row"> <!--5/12 vs 4/13-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound16LetterB">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound16LetterB">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 4,13 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterG">Gonzaga (4)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterG">Virginia Tech (4)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterD">_____</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterD">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterH">UC Irvine (13)</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterH">Marshall (13)</div>
+            </div>
+            <div class="row"> <!--Quad finals final four-->
+                <div class="col-4"></div>
+                    <div class="col-1 gameboxBlank" id="QuadSWRound4LetterA">_____</div>
+                <div class="col-2"></div>
+                    <div class="col-1 gameboxBlank" id="QuadSERound4LetterA">_____</div>
+                <div class="col-4"></div>
+            </div>
+            <!--HALF West Brackets-->
+            <!--Teams 6,11-->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterI">Tennessee (6)</div>
+                <div class="col-3 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-3 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterI">Syracuse (6)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterE">_____</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterE">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterJ">Green Bay (11)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterJ">AUB/ZONA (11)</div>
+            </div>
+            <div class="row"> <!--6/11 vs 3/14-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound16LetterC">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound16LetterC">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 3,14 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterK">NC State (3)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterK">UConn (3)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterF">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterF">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterL">Chattanooga (14)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-4"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterL">Jackson St. (14)</div>
+            </div>
+            <div class="row"> <!--final eight game-->
+                <div class="col-3"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound8LetterB">_____</div>
+                <div class="col-4"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound8LetterB">_____</div>
+                <div class="col-3"></div>
+            </div>
+            <!--Teams 7,10 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterM">Iowa St. (7)</div>
+                <div class="col-2 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-2 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterM">Duke (7)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterG">_____</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterG">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterN">Maryland (10)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-6"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterN">Richmond (10)</div>
+            </div>
+            <div class="row"> <!--7/10 vs 2/15-->
+                <div class="col-2"></div>
+                <div class="col-1 gameboxBlank"id="QuadSWRound16LetterD">_____</div>
+                <div class="col-6"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound16LetterD">_____</div>
+                <div class="col-2"></div>
+            </div>
+            <!--Teams 2, 15 -->
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterO">Stanford (2)</div>
+                <div class="col-1 vlWest"></div>
+                <div class="col-8"></div>
+                <div class="col-1 vlEast"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterO">Ohio St. (2)</div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1 gameboxBlank" id="QuadSWRound32LetterH">_____</div>
+                <div class="col-8"></div>
+                <div class="col-1 gameboxBlank" id="QuadSERound32LetterH">_____</div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1 gamebox64" id="QuadSWRound64LetterP">Norfold St. (15)</div>
+                <div class="col-10"></div>
+                <div class="col-1 gamebox64" id="QuadSERound64LetterP">Maine (15)</div>
+            </div>
+        </div>
+
+        <footer class="page-footer">
+            <div class="row">
+                <div class="col-12 footer-copyright text-center">How it works: Winners of each match are probabilistically generated based on their seeds. 
+                This procedure favors the strong seed teams while allowing upsets, and it results in surprisingly 
+                <a href="https://medium.com/@benlahner/18-million-brackets-later-here-are-the-best-and-worst-ways-to-fill-out-your-march-madness-c41db4920a8c">good performance</a> 
+                when backtested on historical brackets.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-copyright text-center">sportsballbracket.com is not affiliated with the 
+                    <a href="https://www.ncaa.com/news/basketball-men/article/2023-01-23/2023-march-madness-mens-ncaa-tournament-schedule-dates-times">Men's</a> 
+                    or
+                    <a href="https://www.ncaa.com/news/basketball-women/article/2023-01-25/2023-march-madness-womens-ncaa-tournament-schedule-dates-times">Women's</a> 
+                    <a href="https://en.wikipedia.org/wiki/NCAA_Division_I_men%27s_basketball_tournament">NCAA March Madness</a> 
+                    college basketball tournament</div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-copyright text-center">sportsballbracket.com Designed and Created by <a href="https://blahner.github.io/" target="_blank">Ben Lahner</a>, 2024</div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-copyright text-center">If this saved you some 
+                    <a href="https://medium.com/@benlahner/the-sportsball-bracket-generator-a-competitive-march-madness-bracket-generator-for-non-competitive-611d3ce5fd28">time and headache</a>,
+                    please consider <a href="https://www.buymeacoffee.com/benlahner" target="_blank">buying me a coffee!</a></div>
+            </div>
+        </footer>
+        <script src="main_womens.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	</body>
+	
+</html>
