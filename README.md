@@ -1,4 +1,6 @@
 # sportsball
+<img src="website/images/sportsball_favicon.png" align="center" height="auto" width="250" >
+
 Code for a html/css/avascript bracket generator website and python bracket analysis scripts.
 
 This code is specifically written for a 64 team tournament bracket (like NCAA's college basketball march madness) but can
